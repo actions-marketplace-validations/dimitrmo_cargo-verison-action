@@ -13,8 +13,26 @@ inputs:
     description: 'Tag the commit. Setting this to false results in no commit being made at all'
     required: false
     default: 'true'
+  force-install:
+    description: 'Force install binary'
+    required: false
+    default: 'true'
+  skip-install:
+    description: 'Skip the whole installation process in case binary is already installed'
+    required: false
+    default: 'false'
+  skip-bump:
+    description: 'Skip the whole version bump process. This is useful for just installing the binary and not running it.'
+    required: false
+    default: 'false'
+  workspace:
+    description: 'Whether a project is a workspace root and its version leaves in [workspace.package]'
+    required: false
+    default: 'false'
 outputs:
-  new_version:
+  prev_version:
+    description: 'The version before the bump'
+  next_version:
     description: 'The new version after the bump'
 runs:
   using: 'node20'
