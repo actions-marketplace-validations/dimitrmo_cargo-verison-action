@@ -1,13 +1,13 @@
 {
   "name": "@dimitrmo/cargo-verison-action",
   "description": "Use cargo-verison to bump the version.",
-  "version": "1.0.36",
+  "version": "1.0.38",
   "main": "src/index.js",
   "type": "module",
   "devDependencies": {
-    "@actions/core": "^2.0.1",
+    "@actions/core": "^2.0.2",
     "@actions/exec": "^2.0.0",
-    "@actions/github": "^6.0.1",
+    "@actions/github": "^7.0.0",
     "@vercel/ncc": "^0.38.4",
     "chalk": "^5.6.2"
   },
